@@ -15,3 +15,5 @@ The first edition is only made with pure html and css
 <br>
 
 # Credits...
+
+~ Pixabay (for the code photo)
