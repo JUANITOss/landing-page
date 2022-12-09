@@ -24,11 +24,6 @@ body > div {
     border-radius: 50%;
 }
 
-.code {
-    width: 500px;
-    box-shadow: rgba(0, 0, 0, 0.398) 10px 10px 10px;
-}
-
 ul {
     list-style-type: none;
     display: flex;
@@ -44,15 +39,6 @@ body {
     gap: 20px;
 }
 
-.header {
-    background-color: #16191e;
-    display: flex;
-    padding: 5px 20px;
-    align-items: center;
-    justify-content: space-between;
-
-}
-
 a {
     text-decoration: none;
     color: whitesmoke;
@@ -66,6 +52,15 @@ p {
     font-family: Helvetica, sans-serif;
 }
 
+.header {
+    background-color: #16191e;
+    display: flex;
+    padding: 5px 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
 .intro {
     border-radius: 40px;
     margin: auto;
@@ -74,9 +69,12 @@ p {
     padding: 20px;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .intro-text {
+    min-width: none;
+    min-height: none;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -91,11 +89,53 @@ p {
     font-size: 20px;
 }
 
+.code {
+    margin-top: 20px;
+    max-width: 100%;
+    width: 500px;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.398) 10px 10px 10px;
+    display: flex;
+    flex: 1 1 auto;
+}
+
+.projects {
+    padding: 10px 0;
+    background-color: #16191e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.progress {
+    padding: 15px;
+    background-color: #16191e;
+    display: flex;
+    justify-content: space-between;
+}
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.phrase {
+    text-align: center;
+}
+
+.author {
+    text-align: end;
+}
+
+
 .footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex: 0 1 auto;
+    flex: 1;
     background-color: #16191e;
 }
 
