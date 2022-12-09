@@ -22,12 +22,16 @@ body > div {
     background-color: whitesmoke;
     transform: rotate(45deg);
     border-radius: 50%;
+    display: flex;
 }
 
 ul {
     list-style-type: none;
     display: flex;
-    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    flex: 1 1 0;
+    gap: 15px;
 }
 
 body {
@@ -52,10 +56,23 @@ p {
     font-family: Helvetica, sans-serif;
 }
 
+button {
+    border-radius: 10px;
+    width: 180px;
+    height: 60px ;
+    background-color: #0e0e0e;
+    color: whitesmoke;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid black;
+}
+
 .header {
     background-color: #16191e;
     display: flex;
-    padding: 5px 20px;
+    flex-wrap: nowrap;
+    gap: 20px;
+    padding: 20px 20px;
     align-items: center;
     justify-content: space-between;
 }
@@ -65,7 +82,7 @@ p {
     border-radius: 40px;
     margin: auto;
     background-color: #151a21;
-    max-width: 90%;
+    max-width: 95%;
     padding: 20px;
     display: flex;
     justify-content: space-around;
@@ -83,7 +100,7 @@ p {
     flex: 0 1 50%;
 }
 
-.intro-text > p {
+.intro-text > p, .info > p {
     text-align: center;
     font-weight: 500;
     font-size: 20px;
@@ -130,6 +147,31 @@ p {
     text-align: end;
 }
 
+.contact-info {
+    background-color: #16191e;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 50%;
+    border: 1px solid black;
+}
+
+.info > p {
+    text-align: center;
+}
+
+.info > h2 {
+    text-align: center;
+}
 
 .footer {
     display: flex;
