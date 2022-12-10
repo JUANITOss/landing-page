@@ -42,7 +42,7 @@ ul {
 
 body {
     color: whitesmoke;
-    background-color: #181b1d;
+    background-color: #000000ed;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -222,7 +222,7 @@ button {
     flex-wrap: wrap;
     gap: 10px;
     width: 50%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 .info > p {
