@@ -46,7 +46,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 20px;
+    gap: 50px;
 }
 
 a {
@@ -161,18 +161,39 @@ button {
     padding: 15px;
     background-color: #16191e;
     display: flex;
+    gap: 20px;
+    align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .quote {
+    padding: 25px;
+    border: 2px #0e0e0e dashed;
     display: flex;
+    flex: 1 1 0;
+    justify-content: center;
     flex-direction: column;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 9px;
 }
 
 .phrase {
-    text-align: center;
+    text-align: start;
+    font-style: italic;
+    font-family: monospace, sans-serif;
+}
+
+.author {
+    text-align: end;
+    font-weight: bold;
+}
+
+.cert-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
 }
 
 .certs {
@@ -182,12 +203,9 @@ button {
 }
 
 .certs > img {
-    height: 300px;
+    max-width: 400px;
 }
 
-.author {
-    text-align: end;
-}
 
 .contact-info {
     background-color: #16191e;
