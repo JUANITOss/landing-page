@@ -19,7 +19,13 @@ h2 {
 }
 
 body > div {
-    border: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.intro, .progress {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
 }
 
 .logo {
@@ -136,11 +142,14 @@ button {
     display: flex;
     gap: 30px;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
 }
 
 .card > a > img {
+    max-width: 90%;
     height: 150px;
+    width: 300px;
     border-radius: 10px;
     box-shadow: 5px 5px 10px black;
 }
@@ -176,7 +185,8 @@ button {
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.628);
     max-width: 90%;
     padding: 25px;
-    border: 2px #0e0e0e dashed;
+    border-radius: 25px;
+    border: 1px #0e0e0e solid;
     display: flex;
     flex: 1 1 0;
     justify-content: center;
@@ -214,7 +224,11 @@ button {
 }
 
 .certs > img {
-    max-width: 90%;
+    box-shadow: 5px 5px 10px black;
+    border-radius: 25px;
+    max-width: 100%;
+    width: 40vw;
+    height: auto;
 }
 
 
