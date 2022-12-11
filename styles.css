@@ -15,6 +15,7 @@ h2 {
     font-family: 'Courier New', Courier, monospace;
     font-weight: 700;
     font-size: 40px;
+    text-align: center;
 }
 
 body > div {
@@ -85,7 +86,7 @@ button {
 
 
 .intro {
-    border-radius: 40px;
+    border-radius: 25px;
     margin: auto;
     background-color: #151a21;
     max-width: 95%;
@@ -158,16 +159,22 @@ button {
 }
 
 .progress {
+    border-radius: 25px;
+    margin: auto;
+    width: 90%;
     padding: 15px;
     background-color: #16191e;
     display: flex;
     gap: 20px;
     align-items: center;
     justify-content: space-between;
+    flex-direction: column-reverse;
     flex-wrap: wrap;
 }
 
 .quote {
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.628);
+    max-width: 90%;
     padding: 25px;
     border: 2px #0e0e0e dashed;
     display: flex;
@@ -198,12 +205,16 @@ button {
 
 .certs {
     display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
     gap: 20px;
     flex-wrap: wrap;
 }
 
 .certs > img {
-    max-width: 400px;
+    max-width: 90%;
 }
 
 
